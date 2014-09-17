@@ -12,7 +12,7 @@
 @interface JogoDeCartasViewController ()
 
 // Model
-@property (nonatomic) NSUInteger tentativas;
+@property (nonatomic) NSUInteger tentativas2;
 @property (strong, nonatomic) Baralho *baralho;
 
 // View
@@ -29,10 +29,10 @@
     return _baralho;
 }
 
-- (void)setTentativas:(NSUInteger)tentativas
+- (void)setTentativas2:(NSUInteger)tentativas2
 {
-    _tentativas = tentativas;
-    self.tentativasLabel.text = [NSString stringWithFormat:@"Tentativas: %d", (int)self.tentativas];
+    _tentativas2 = tentativas2;
+    self.tentativasLabel.text = [NSString stringWithFormat:@"Tentativas: %d", (int)self.tentativas2];
 }
 
 - (IBAction)virarCarta:(UIButton *)carta
@@ -44,7 +44,7 @@
         [carta setTitle:cartaSorteada.conteudo forState:UIControlStateNormal];
         
         // incrementa
-        self.tentativas++;
+        self.tentativas2++;
     }
     else{
         [carta setTitle:@"" forState:UIControlStateNormal];
