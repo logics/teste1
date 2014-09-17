@@ -12,7 +12,7 @@
 @interface JogoDeCartasViewController ()
 
 // Model
-@property (nonatomic) NSUInteger tentativas;
+@property (nonatomic) NSUInteger tentativas1;
 @property (strong, nonatomic) Baralho *baralho;
 
 // View
